@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BadgeRadio">
+        <attr name="badge_radius" format="dimension"/>
+        <attr name="badge_background" format="color|reference"/>
+        <attr name="badge_text_size" format="dimension"/>
+        <attr name="badge_text_color" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="DrawArcView">
+        <attr name="draw_arc_stroke_width" format="dimension"/>
+        <attr name="draw_arc_stroke_color" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="HandWriteBoard">
+        <attr name="hand_write_background_color" format="color|reference"/>
+        <attr name="hand_write_stroke_width" format="dimension"/>
+        <attr name="hand_write_storke_color" format="color|reference"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,6 @@
+include ':app', ':lib.common_view', ':lib.retrofit', ':lib.okhttp'
+
+gradle.ext.compileSdkVersion = 24
+gradle.ext.buildToolsVersion = "24.0.1"
+gradle.ext.minSdkVersion = 15
+gradle.ext.targetSdkVersion = 24

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.jdp.arsenal"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".retrofit.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".test.UploadImgActivity">
+        </activity>
+        <activity
+            android:name=".test.HandWriteActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:hardwareAccelerated="true">
+        </activity>
+        <activity
+            android:name=".test.SwipeRefreshActivity"
+            android:label="@string/title_activity_swipe_refresh"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".test.DimActivity">
+        </activity>
+        <activity android:name=".okhttp.OKHttpActivity">
+        </activity>
+        <activity android:name=".recycleview.RecycleViewActivity">
+        </activity>
+        <activity android:name=".greendao.GreenDaoActivity">
+        </activity>
+        <activity android:name=".picasso.PicassoActivity">
+
+        </activity>
+    </application>
+
+</manifest>

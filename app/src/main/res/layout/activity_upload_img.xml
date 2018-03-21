@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jdp.arsenal.test.UploadImgActivity">
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="#00f">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="#f00"
+            android:scaleType="centerInside"/>
+
+        <View
+            android:id="@+id/myview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#5e000000"/>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion gradle.ext.compileSdkVersion
+    buildToolsVersion gradle.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.jdp.arsenal"
+        minSdkVersion gradle.ext.minSdkVersion
+        targetSdkVersion gradle.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.1"
+    }
+    buildTypes {
+        release {
+            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+        }
+    }
+}
+
+greendao {
+    schemaVersion 2//数据库版本号
+    daoPackage 'com.jdp.arsenal.greendao'//设置DaoMaster、DaoSession、Dao包名
+    targetGenDir 'src/main/java'//设置DaoMaster、DaoSession、Dao目录
+    //targetGenDirTest：设置生成单元测试目录
+    //generateTests：设置自动生成单元测试用例
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':lib.common_view')
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:recyclerview-v7:24.2.0'
+    compile 'org.greenrobot:greendao:3.2.0'
+    compile 'net.zetetic:android-database-sqlcipher:3.5.2'
+    compile project(':lib.okhttp')
+    compile 'com.squareup.picasso:picasso:2.5.2'
+}

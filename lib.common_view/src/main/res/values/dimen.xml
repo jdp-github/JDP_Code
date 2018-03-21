@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- BadgeRadio -->
+    <dimen name="badge_radio_default_radius">5dp</dimen>
+    <dimen name="badge_radio_default_text_size">8sp</dimen>
+
+    <!-- DrawArcView -->
+    <dimen name="draw_arc_default_stroke_width">1dp</dimen>
+</resources>

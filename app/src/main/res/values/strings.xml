@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">jdp-android-arsenal</string>
+    <string name="title_activity_swipe_refresh">SwipeRefreshActivity</string>
+</resources>
