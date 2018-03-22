@@ -31,6 +31,7 @@ public class MyApplication extends Application {
 
         instance = this;
 
+
 //        MyOpenHelper helper = new MyOpenHelper(this, ENCRYPTED ? "notes-db-encrypted.db" : "test-db.db");
 //        Database db = ENCRYPTED ? helper.getEncryptedWritableDb("super-secret") : helper.getWritableDb();
 //        daoSession = new DaoMaster(db).newSession();
